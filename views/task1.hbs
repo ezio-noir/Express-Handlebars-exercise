@@ -1,0 +1,18 @@
+<!--contain-->
+<div class="container">
+    <h1 class="text-center">Inspiring Quotes</h1>
+    <div class="row destacados">
+        {{#each emotions}}
+        <div class="col-md-3">
+            <a href="#">
+                <img src="/images{{imagePath}}" alt="{{title}}" class="img-circle img-thumbnail" onclick="document.querySelector('#quoteImage').src = '/images{{quotePath}}'">
+                <h2>{{title}}</h2>
+            </a>
+        </div>
+        {{/each}}
+    </div>
+    <div class="row text-center">
+        <img id="quoteImage" class="img-thumbnail" src="images/task1/default.jpg" />
+    </div>
+</div>
+<!--/contain-->
